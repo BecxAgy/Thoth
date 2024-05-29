@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { LuFileText, LuSearch } from "react-icons/lu";
+import { LuFileText, LuSearch, LuX } from "react-icons/lu";
 import SearchBar from "./search_bar";
 import Image from "next/image";
 import ProfileMenu from "./profile_menu";
@@ -32,13 +32,17 @@ const Navbar = () => {
       {user && <SearchBar visible={searchBoxVisibility} />}
       {user ? (
         <div className="flex items-center gap-3 md:gap-6 ml-auto">
-          <ActionMenu />
           <button
             className="md:hidden text-black flex items-center justify-center"
             onClick={() => setSearchBoxVisibility(!searchBoxVisibility)}
           >
-            <LuSearch className="text-2xl" />
+            {searchBoxVisibility ? (
+              <LuX className="text-2xl" />
+            ) : (
+              <LuSearch className="text-2xl" />
+            )}
           </button>
+          <ActionMenu />
 
           <ProfileMenu />
         </div>
