@@ -20,7 +20,7 @@ export default function Home() {
           </TabsTrigger>
         </TabsList>
         <TabsContent
-          className="flex flex-col gap-8 py-5 w-full"
+          className="flex flex-col gap-8 py-5  md:min-w-[600px]"
           value="project"
         >
           <CardProject />
@@ -29,7 +29,7 @@ export default function Home() {
         <TabsContent value="reports">Change your reports here</TabsContent>
       </Tabs>
 
-      <div className="border-l min-w-[40%] lg:min-w-[600px] h-screen max-w-min pl-8 pt-3 max-md:hidden ">
+      <div className="border-l  md:min-w-[25%]  h-screen max-w-min pl-8 pt-3 max-md:hidden ">
         <div className="flex flex-col gap-10"></div>
         <h2 className="font-medium text-lg">Nossos conhecimentos</h2>
         <div className="flex gap-3 flex-wrap mt-6">

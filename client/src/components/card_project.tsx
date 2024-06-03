@@ -7,14 +7,14 @@ import { Button } from "./ui/button";
 
 const CardProject = () => {
   return (
-    <div className="bg-white shadow-lg w-full rounded-xl">
+    <div className="bg-white shadow-lg rounded-xl md:h-[250px] relative ">
       <div className="flex md:flex-row flex-col  ">
         <img
           src="/background_card.jpg"
           alt="background"
-          className=" md:max-h-[170px] md:rounded-e-xl  max-h-[145px] object-cover rounded-xl "
+          className=" md:rounded-e-xl md:h-[250px] rounded-xl "
         />
-        <div className="p-5 ">
+        <div className="p-5 w-full ">
           <div className=" flex justify-between">
             <h1 className="text-[15px] font-medium">Titulo do Projeto</h1>
             <div className="flex gap-2 ">
@@ -23,7 +23,7 @@ const CardProject = () => {
             </div>
           </div>
           <div className="">
-            <div className="flex overflow-y-auto w-[100%] gap-3 py-1">
+            <div className="flex overflow-y-auto gap-3 py-1">
               <CategoryChip category="React" color="FFD3B6" />
               <CategoryChip category="Node.js" color="009FF0" />
             </div>
@@ -32,7 +32,7 @@ const CardProject = () => {
               tincidunt malesuada diam sit amet maximus. Duis venenatis lacinia{" "}
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end ">
             <Button className="rounded-xl  text-[12px] my-2">Ver mais</Button>
           </div>
         </div>
